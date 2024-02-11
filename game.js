@@ -50,102 +50,10 @@ const outcome = document.createElement("p");
 const player = document.createElement("h3");
 const comp = document.createElement("h3");
 
-
-// // 5 rounds function
-// function game(rounds){
-//     let playerWins = 0;
-//     let compWins = 0;
-//     let win = "";
-//     let currentRound = 1;
-
-//     player.textContent = `Player: ${playerWins}`;
-//     comp.textContent =  `Computer: ${compWins}`;
-//     scoreDiv.appendChild(player);
-//     scoreDiv.appendChild(comp);
-
-//     if((currentRound <= rounds) && (playerWins+compWins !== 5)){
-//         // Add event listeners with player choice argument
-//     rockBtn.addEventListener("click", () => {
-//         win = playRound("rock");
-//         outcome.textContent = win;
-  
-//         // Calculate wins
-//         if (win.includes("You Lose!")) {
-//           compWins++;
-//           currentRound++;
-//         } else if (win.includes("You Win!")) {
-//           playerWins++;
-//           currentRound++;
-//         }
-        
-//         //append results to div
-//         resultDiv.appendChild(outcome);
-//         //display overall winner
-//         player.textContent = `Player: ${playerWins}`;
-//         comp.textContent =  `Computer: ${compWins}`;
-//         scoreDiv.appendChild(player);
-//         scoreDiv.appendChild(comp);
-        
-//     });
-//     paperBtn.addEventListener("click", () => {
-//         win = playRound("paper");
-//         outcome.textContent = win;
-  
-//         // Calculate wins
-//         if (win.includes("You Lose!")) {
-//           compWins++;
-//           currentRound++;
-//         } else if (win.includes("You Win!")) {
-//           playerWins++;
-//           currentRound++;
-//         }
-
-//         //append results to div
-//         resultDiv.appendChild(outcome);
-//         //display overall winner
-//         player.textContent = `Player: ${playerWins}`;
-//         comp.textContent =  `Computer: ${compWins}`;
-//         scoreDiv.appendChild(player);
-//         scoreDiv.appendChild(comp);
-//     });
-//     scissorsBtn.addEventListener("click", () => {
-//         win = playRound("scissors");
-//         outcome.textContent = win;
-  
-//         // Calculate wins
-//         if (win.includes("You Lose!")) {
-//           compWins++;
-//           currentRound++;
-//         } else if (win.includes("You Win!")) {
-//           playerWins++;
-//           currentRound++;
-//         }
-
-//         //append results to div
-//         resultDiv.appendChild(outcome);
-//         //display overall winner
-//         player.textContent = `Player: ${playerWins}`;
-//         comp.textContent =  `Computer: ${compWins}`;
-//         scoreDiv.appendChild(player);
-//         scoreDiv.appendChild(comp);
-//     });
-
-   
-
-//     }else{
-//         resultDiv.textContent = "GAME OVER";
-//     }
-// }
-
-// game(5);
-
-// Existing code (getComputerChoice, playRound, button creation) remains the same
-
 function game(rounds) {
     let playerWins = 0;
     let compWins = 0;
     let win = "";
-    let currentRound = 1;
   
     player.textContent = `Player: ${playerWins}`;
     comp.textContent = `Computer: ${compWins}`;
